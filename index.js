@@ -25,10 +25,10 @@ client.on("ready", async () => {
 
   const r = new Discord.RichPresence(client)
     .setApplicationId("1505569255847100546")
-    .setType("STREAMING")
+    .setType("PLAYING"); //STREAMING,WATCHING,LISTENING,...
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") //Must be a youtube video link
-    .setState("ᖽᐸａ𝑅𝐎𝕊 ☔")
-    .setName("Is this really love?")
+    .setState("your state")
+    .setName("ᖽᐸａ𝑅𝐎𝕊 ☔?")
     .setDetails(`Captivates Me [${formatTime()}]`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage(
@@ -52,7 +52,7 @@ client.on("ready", async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `Those Eyes [${newTime}]`;
+      const newDetails = `Haizz [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
