@@ -12,7 +12,7 @@ function formatTime() {
   //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: "Vietnam/Ha_Noi", // Thay đổi timezone tùy thích ở đây
+    timeZone: "Asia/Ho_Chi_Minh", // Thay đổi timezone tùy thích ở đây
     hour12: true,
     hour: "numeric",
     minute: "numeric",
