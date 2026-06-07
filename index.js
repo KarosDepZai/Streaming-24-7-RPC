@@ -31,9 +31,9 @@ client.on("ready", async () => {
     .setName("ᖽᐸａ𝑅Ｏ𝕊 ☔?")
     .setDetails(`Tôi đang Street [${formatTime()}]`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage("https://media.tenor.com/aYsNJR1rUpIAAAAM/gojo.gif") 
+    .setAssetsLargeImage(1506663140522201089") 
     .setAssetsLargeText("I have fallen for you") 
-    .setAssetsSmallImage("https://media.tenor.com/aYsNJR1rUpIAAAAM/gojo.gif") 
+    .setAssetsSmallImage("1506884112722690048") 
     .setAssetsSmallText("Im obsessed with you") 
     .addButton("My Profile", "https://karosdepzai.vercel.app")
     .addButton("My Discord", "https://discord.gg/Gju793PgHT"); // Đã xóa bỏ các dấu chấm phẩy lỗi ở giữa chuỗi
