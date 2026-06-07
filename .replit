@@ -93,7 +93,7 @@ run = ["sh", "-c", "node index.js"]
 expertMode = true
 
 [[ports]]
-localPort = 3000
+localPort = 8080
 externalPort = 80
 
 [workflows]
