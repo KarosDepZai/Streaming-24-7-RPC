@@ -26,7 +26,7 @@ client.on("ready", async () => {
 
   const r = new Discord.RichPresence(client)
     .setApplicationId("1505569255847100546")
-    .setType("PLAYING") // Đã xóa dấu chấm phẩy ở đây để không bị lỗi chain
+    .setType("STREAMING") // Đã xóa dấu chấm phẩy ở đây để không bị lỗi chain
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") 
     .setState("No Reply = Sleep 😴, Play Game 🎮")
     .setName("ᖽᐸａ𝑅Ｏ𝕊 ☔?")
