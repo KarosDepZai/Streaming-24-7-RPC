@@ -6,12 +6,12 @@ server.all("/", (req, res) => {
 });
 
 function keepAlive() {
-  server.listen(3000, () => {
+  server.listen(8080, () => {
     console.log("Server is Ready!! " + Date.now());
 
     setInterval(
       () => {
-        fetch(`http://localhost:3000`)
+        fetch(`http://localhost:8080`)
           .then((res) =>
             console.log(`Keep-alive ping successful: ${res.status}`),
           )
