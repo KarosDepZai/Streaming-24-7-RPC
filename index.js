@@ -4,7 +4,6 @@ const client = new Discord.Client({
   checkUpdate: false,
 }); 
 
-// Giữ lại file server.js cũ từ Replit nếu có, Railway vẫn chạy bình thường
 const keepAlive = require("./server.js");
 keepAlive(); 
 
@@ -12,7 +11,7 @@ function formatTime() {
   //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: "Asia/Ho_Chi_Minh", // Thay đổi timezone tùy thích ở đây
+    timeZone: "Asia/Ho_Chi_Minh", // Đã sửa thành múi giờ chuẩn quốc tế của Việt Nam
     hour12: true,
     hour: "numeric",
     minute: "numeric",
@@ -26,7 +25,7 @@ client.on("ready", async () => {
 
   const r = new Discord.RichPresence(client)
     .setApplicationId("1505569255847100546")
-    .setType("STREAMING") // Đã xóa dấu chấm phẩy ở đây để không bị lỗi chain
+    .setType("STREAMING") // Đã chuyển thành STREAMING để hiện nút bấm và link YouTube xịn sò
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") 
     .setState("No Reply = Sleep 😴, Play Game 🎮")
     .setName("ᖽᐸａ𝑅Ｏ𝕊 ☔?")
@@ -37,7 +36,7 @@ client.on("ready", async () => {
     .setAssetsSmallImage("https://media.tenor.com/aYsNJR1rUpIAAAAM/gojo.gif") 
     .setAssetsSmallText("Im obsessed with you") 
     .addButton("My Profile", "https://karosdepzai.vercel.app")
-    .addButton("My Discord", "https://discord.gg/Gju793PgHT"); 
+    .addButton("My Discord", "https://discord.gg/Gju793PgHT"); // Đã xóa bỏ các dấu chấm phẩy lỗi ở giữa chuỗi
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); // dnd, online, idle, offline 
@@ -46,7 +45,7 @@ client.on("ready", async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `Bâu giờ đang là [${newTime}]`;
+      const newDetails = `Bây giờ đang là [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
@@ -54,6 +53,5 @@ client.on("ready", async () => {
   }, 1000); // Cập nhật mỗi giây
 }); 
 
-// Lấy TOKEN từ Variables của Railway cực an toàn
 const mySecret = process.env["TOKEN"];
 client.login(mySecret);
