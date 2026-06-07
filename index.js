@@ -25,13 +25,13 @@ client.on("ready", async () => {
 
   const r = new Discord.RichPresence(client)
     .setApplicationId("1505569255847100546")
-    .setType("STREAMING") // Đã chuyển thành STREAMING để hiện nút bấm và link YouTube xịn sò
+    .setType("PLAYING") // Đã chuyển thành STREAMING để hiện nút bấm và link YouTube xịn sò
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") 
     .setState("No Reply = Sleep 😴, Play Game 🎮")
     .setName("ᖽᐸａ𝑅Ｏ𝕊 ☔?")
     .setDetails(`Tôi đang Street [${formatTime()}]`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage(1506663140522201089") 
+    .setAssetsLargeImage("1506663140522201089") 
     .setAssetsLargeText("I have fallen for you") 
     .setAssetsSmallImage("1506884112722690048") 
     .setAssetsSmallText("Im obsessed with you") 
