@@ -29,7 +29,7 @@ client.on("ready", async () => {
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") 
     .setState("ɴᴏ ʀᴇᴘʟʏ = sʟᴇᴇᴘ 😪, ᴘʟᴀʏ ɢᴀᴍᴇ 🎮")
     .setName("ᖽᐸａ𝑅Ｏ𝕊 ❄?")
-    .setDetails(`Tôi đang Street [${formatTime()}]`)
+    .setDetails(`ßα̂ყ ցισ̛̀ ɬὰ [${formatTime()}] 🔥`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage("1506663140522201089") 
     .setAssetsLargeText("I have fallen for you") 
