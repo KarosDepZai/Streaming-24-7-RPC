@@ -27,7 +27,7 @@ client.on("ready", async () => {
     .setApplicationId("1505569255847100546")
     .setType("PLAYING") // Đã chuyển thành STREAMING để hiện nút bấm và link YouTube xịn sò
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") 
-    .setState("No Reply = Sleep 😴, Play Game 🎮")
+    .setState("ɴᴏ ʀᴇᴘʟʏ = sʟᴇᴇᴘ 😪, ᴘʟᴀʏ ɢᴀᴍᴇ 🎮")
     .setName("ᖽᐸａ𝑅Ｏ𝕊 ☔?")
     .setDetails(`Tôi đang Street [${formatTime()}]`)
     .setStartTimestamp(Date.now())
@@ -36,7 +36,7 @@ client.on("ready", async () => {
     .setAssetsSmallImage("1506884112722690048") 
     .setAssetsSmallText("Im obsessed with you") 
     .addButton("My Profile", "https://karosdepzai.vercel.app")
-    .addButton("My Discord", "https://discord.gg/Gju793PgHT"); // Đã xóa bỏ các dấu chấm phẩy lỗi ở giữa chuỗi
+    .addButton("‧₊˚.⊹xDiscord✧.*", "https://discord.gg/Gju793PgHT"); // Đã xóa bỏ các dấu chấm phẩy lỗi ở giữa chuỗi
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); // dnd, online, idle, offline 
