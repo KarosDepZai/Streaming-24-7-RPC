@@ -35,7 +35,7 @@ client.on("ready", async () => {
     .setAssetsLargeText("I have fallen for you") 
     .setAssetsSmallImage("1506884112722690048") 
     .setAssetsSmallText("Im obsessed with you") 
-    .addButton("My Profile", "https://karosdepzai.vercel.app")
+    .addButton("‧₊˚.Profile ࿐壮", "https://karosdepzai.vercel.app")
     .addButton("‧₊˚.⊹xDiscord✧.*", "https://dsc.gg/congdongviet");
 
   client.user.setActivity(r);
