@@ -29,7 +29,7 @@ client.on("ready", async () => {
 
   const r = new Discord.RichPresence(client)
     .setApplicationId("1505569255847100546")
-    .setType("PLAYING")
+    .setType("PLAYING") // STREAMING, WATCHING,LISTENING
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") 
     .setState("ɴᴏ ʀᴇᴘʟʏ = sʟᴇᴇᴘ 😪, ᴘʟᴀʏ ɢᴀᴍᴇ 🎮")
     .setName("ᖽᐸａ𝑅Ｏ𝕊 ❄?")
