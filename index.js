@@ -67,6 +67,3 @@ client.on("ready", async () => {
  
 const mySecret = process.env["TOKEN"];
 client.login(mySecret);
-NG LẶP
-const mySecret = process.env["TOKEN"];
-client.login(mySecret);
