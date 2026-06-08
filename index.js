@@ -46,7 +46,6 @@ client.on("ready", async () => {
     .addButton("â€§â‚ŠËš.Profile à¿å£®", "https://karosdepzai.vercel.app")
     .addButton("â€§â‚ŠËš.âŠ¹xDiscordâœ§.*", "https://dsc.gg/congdongviet");
 
-
   client.user.setPresence({ activities: [r], status: "dnd" }); 
 
   let prevTime = null;
